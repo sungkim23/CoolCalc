@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.sungkim.coolcalc.CalcActivity"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:background="#38c5c6">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="567"
+                android:id="@+id/resultsText"
+                android:textSize="35dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:weightSum="4">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/sevenBtn"
+                android:text="7"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="8"
+                android:id="@+id/eightBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="9"
+                android:id="@+id/nineBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/divideBtn"
+                android:layout_weight="1"
+                android:src="@drawable/divide"
+                android:background="#00ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:weightSum="4" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/fourBtn"
+                android:text="4"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="5"
+                android:id="@+id/fiveBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="6"
+                android:id="@+id/sixBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/multiplyBtn"
+                android:layout_weight="1"
+                android:src="@drawable/multiply"
+                android:background="#00ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:weightSum="4" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/oneBtn"
+                android:text="1"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="2"
+                android:id="@+id/twoBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="3"
+                android:id="@+id/threeBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/subtractBtn"
+                android:layout_weight="1"
+                android:src="@drawable/subtract"
+                android:background="#00ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="87dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"
+                    android:id="@+id/clearBtn"
+                    android:background="#32bdbd"
+                    android:layout_centerInParent="true"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="0"
+                android:id="@+id/zeroBtn"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/addBtn"
+                android:layout_weight="1"
+                android:src="@drawable/add"
+                android:background="#00ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calcBtn"
+        android:src="@drawable/equal"
+        android:layout_gravity="right"
+        android:background="#0032bdbd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:cropToPadding="false"
+        android:paddingTop="110dp"
+        android:paddingRight="15dp" />
+
+</RelativeLayout>
